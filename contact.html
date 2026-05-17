@@ -110,7 +110,12 @@
       <div class="contact-form">
         <h2 style="margin-bottom:8px;">Être rappelé sous 2h</h2>
         <p style="color:var(--muted);margin-bottom:24px;">Réponse sous 2 heures ouvrées, par un humain de notre équipe.</p>
-        <form onsubmit="event.preventDefault(); this.querySelector('.form-success').style.display='block'; this.querySelector('button').style.display='none';">
+        <form id="contact-form" onsubmit="return handleContactSubmit(event);">
+          <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+            <label for="website">Ne pas remplir ce champ</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <input type="hidden" name="form_loaded_at" id="form_loaded_at">
           <div class="form-row two">
             <div><label for="nom">Nom</label><input id="nom" name="nom" type="text" required></div>
             <div><label for="prenom">Prénom</label><input id="prenom" name="prenom" type="text" required></div>
@@ -250,6 +255,24 @@
     </div>
   </div>
 </footer>
+<script>
+  document.getElementById('form_loaded_at').value = Date.now();
+  function handleContactSubmit(event) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const honeypot = form.querySelector('#website');
+    const loadedAt = parseInt(form.querySelector('#form_loaded_at').value, 10);
+    const elapsed = Date.now() - loadedAt;
+    if (honeypot.value !== '' || isNaN(elapsed) || elapsed < 2000) {
+      form.querySelector('.form-success').style.display = 'block';
+      form.querySelector('button').style.display = 'none';
+      return false;
+    }
+    form.querySelector('.form-success').style.display = 'block';
+    form.querySelector('button').style.display = 'none';
+    return false;
+  }
+</script>
 <script src="chatbot.js" defer></script>
 </body>
 </html>
