@@ -110,10 +110,13 @@
       <div class="contact-form">
         <h2 style="margin-bottom:8px;">Être rappelé sous 2h</h2>
         <p style="color:var(--muted);margin-bottom:24px;">Réponse sous 2 heures ouvrées, par un humain de notre équipe.</p>
-        <form id="contact-form" onsubmit="return handleContactSubmit(event);">
+        <form id="contact-form" action="https://formsubmit.co/achat@astorya.fr" method="POST" onsubmit="return handleContactSubmit(event);">
+          <input type="hidden" name="_subject" value="Nouvelle demande de contact — site Ancenis">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
           <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
-            <label for="website">Ne pas remplir ce champ</label>
-            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            <label for="_honey">Ne pas remplir ce champ</label>
+            <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off">
           </div>
           <input type="hidden" name="form_loaded_at" id="form_loaded_at">
           <div class="form-row two">
@@ -133,7 +136,7 @@
             </div>
           </div>
           <div class="form-row two">
-            <div><label for="email">Email pro</label><input id="email" name="email" type="email" required></div>
+            <div><label for="email">Email pro</label><input id="email" name="_replyto" type="email" required></div>
             <div><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" required></div>
           </div>
           <div class="form-row">
@@ -260,16 +263,42 @@
   function handleContactSubmit(event) {
     event.preventDefault();
     const form = event.currentTarget;
-    const honeypot = form.querySelector('#website');
+    const honeypot = form.querySelector('#_honey');
     const loadedAt = parseInt(form.querySelector('#form_loaded_at').value, 10);
     const elapsed = Date.now() - loadedAt;
+    const successEl = form.querySelector('.form-success');
+    const button = form.querySelector('button[type="submit"]');
+
     if (honeypot.value !== '' || isNaN(elapsed) || elapsed < 2000) {
-      form.querySelector('.form-success').style.display = 'block';
-      form.querySelector('button').style.display = 'none';
+      successEl.style.display = 'block';
+      button.style.display = 'none';
       return false;
     }
-    form.querySelector('.form-success').style.display = 'block';
-    form.querySelector('button').style.display = 'none';
+
+    button.disabled = true;
+    const originalLabel = button.innerHTML;
+    button.innerHTML = 'Envoi en cours…';
+
+    const formData = new FormData(form);
+    fetch('https://formsubmit.co/ajax/achat@astorya.fr', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    })
+    .then(response => response.ok ? response.json() : Promise.reject(response))
+    .then(() => {
+      successEl.style.display = 'block';
+      button.style.display = 'none';
+      form.reset();
+    })
+    .catch(() => {
+      button.disabled = false;
+      button.innerHTML = originalLabel;
+      successEl.style.display = 'block';
+      successEl.style.background = '#FDECEC';
+      successEl.style.color = '#B3261E';
+      successEl.textContent = "Erreur lors de l'envoi. Merci de nous appeler au 02 85 52 13 95.";
+    });
     return false;
   }
 </script>
