@@ -125,6 +125,156 @@
   </div>
 </section>
 
+<!-- ============ ARGUMENTAIRE COMMERCIAL ============ -->
+<style>
+.sales-bench{padding:60px 0;background:linear-gradient(135deg,#0D2048 0%,#1B3878 100%);color:#fff;}
+.sales-bench .container{max-width:1100px;}
+.sales-bench-head{text-align:center;margin-bottom:44px;}
+.sales-bench-eyebrow{display:inline-block;background:rgba(255,107,53,0.15);color:#FF8B5C;font-size:0.78rem;font-weight:700;padding:6px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;}
+.sales-bench h2{font-family:'Bricolage Grotesque',serif;font-size:clamp(1.6rem,3vw,2.2rem);color:#fff;margin:0 0 12px;line-height:1.25;}
+.sales-bench .sub{color:#C7D2E8;max-width:680px;margin:0 auto;font-size:1.02rem;line-height:1.55;}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:6px;}
+.kpi{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:24px;text-align:center;}
+.kpi strong{display:block;font-family:'Bricolage Grotesque',serif;font-size:2.4rem;font-weight:700;color:#FF8B5C;line-height:1;margin-bottom:8px;}
+.kpi span{color:#FFFFFF;font-weight:600;font-size:0.95rem;display:block;margin-bottom:4px;}
+.kpi small{color:#9BB0D4;font-size:0.82rem;line-height:1.4;display:block;}
+
+.compare{background:#F8FAFC;padding:60px 0;}
+.compare .container{max-width:980px;}
+.compare-head{text-align:center;margin-bottom:36px;}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.compare-col{background:#fff;border-radius:14px;padding:28px;border:1px solid var(--line);}
+.compare-col.before{border-left:4px solid #D04545;}
+.compare-col.after{border-left:4px solid #2E7D4F;}
+.compare-col h3{font-family:'Bricolage Grotesque',serif;font-size:1.05rem;margin:0 0 18px;color:var(--navy);display:flex;align-items:center;gap:8px;}
+.compare-col h3 .badge{font-size:0.7rem;font-weight:700;padding:3px 9px;border-radius:6px;text-transform:uppercase;letter-spacing:0.06em;}
+.compare-col.before h3 .badge{background:#FDECEC;color:#B3261E;}
+.compare-col.after h3 .badge{background:#E8F4EC;color:#2E7D4F;}
+.compare-col ul{list-style:none;padding:0;margin:0;}
+.compare-col ul li{padding:12px 0;border-bottom:1px solid #F0F2F5;font-size:0.93rem;color:var(--text);line-height:1.5;display:flex;gap:10px;align-items:flex-start;}
+.compare-col ul li:last-child{border-bottom:none;}
+.compare-col ul li::before{flex-shrink:0;font-size:1.1rem;line-height:1.3;}
+.compare-col.before ul li::before{content:"✗";color:#D04545;font-weight:700;}
+.compare-col.after ul li::before{content:"✓";color:#2E7D4F;font-weight:700;}
+@media (max-width:680px){.compare-grid{grid-template-columns:1fr;}}
+
+.commitments{padding:60px 0;background:#fff;}
+.commitments .container{max-width:1100px;}
+.commit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:30px;}
+.commit{padding:24px;border:1px solid var(--line);border-radius:14px;display:flex;gap:14px;align-items:flex-start;background:#fff;transition:box-shadow .2s;}
+.commit:hover{box-shadow:0 8px 24px rgba(13,32,72,0.06);}
+.commit-num{flex-shrink:0;width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#FF6B35,#FF8B5C);color:#fff;font-family:'Bricolage Grotesque',serif;font-weight:700;font-size:1.1rem;display:flex;align-items:center;justify-content:center;}
+.commit h4{font-family:'Bricolage Grotesque',serif;font-size:1rem;margin:0 0 6px;color:var(--navy);}
+.commit p{font-size:0.88rem;color:var(--muted);line-height:1.5;margin:0;}
+</style>
+
+<section class="sales-bench">
+  <div class="container">
+    <div class="sales-bench-head">
+      <span class="sales-bench-eyebrow">Pourquoi notre infogérance</span>
+      <h2>Ce que ça change concrètement pour votre PME</h2>
+      <p class="sub">Pas de discours marketing. Des chiffres mesurés sur les contrats actifs de nos clients du Pays d'Ancenis.</p>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi">
+        <strong>−72&nbsp;%</strong>
+        <span>de tickets bloquants</span>
+        <small>Supervision proactive : on détecte avant que ça casse.</small>
+      </div>
+      <div class="kpi">
+        <strong>&lt; 1 h</strong>
+        <span>de résolution moyenne</span>
+        <small>Plus de 80 % des incidents traités à distance, sous l'heure.</small>
+      </div>
+      <div class="kpi">
+        <strong>35&nbsp;€</strong>
+        <span>HT / poste / mois</span>
+        <small>Forfait tout-inclus. Aucun surcoût caché, aucun ticket facturé.</small>
+      </div>
+      <div class="kpi">
+        <strong>0</strong>
+        <span>jour d'engagement</span>
+        <small>Résiliable à tout moment avec 30 jours de préavis.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="container">
+    <div class="compare-head">
+      <h2 style="font-family:'Bricolage Grotesque',serif;font-size:clamp(1.4rem,2.6vw,2rem);color:var(--navy);margin:0 0 10px;">Avant Astorya · Avec Astorya</h2>
+      <p style="color:var(--muted);margin:0;">Le quotidien d'un dirigeant de PME avant et après avoir confié son IT à une vraie société informatique locale.</p>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-col before">
+        <h3>Sans infogérance <span class="badge">Avant</span></h3>
+        <ul>
+          <li>Vous appelez 3 prestataires différents (poste, serveur, télécom) — ils se renvoient la balle</li>
+          <li>Facture imprévisible : intervention, déplacement, pièces… vous découvrez le coût à la fin</li>
+          <li>Les pannes durent 2 à 3 jours, votre équipe est à l'arrêt</li>
+          <li>Aucune supervision : vous découvrez que les sauvegardes ne fonctionnent plus le jour où vous en avez besoin</li>
+          <li>Vous ne savez pas où en est votre parc, ni quand renouveler</li>
+          <li>En cas de cyberattaque, personne ne décroche le week-end</li>
+        </ul>
+      </div>
+      <div class="compare-col after">
+        <h3>Avec Astorya <span class="badge">Après</span></h3>
+        <ul>
+          <li>1 numéro, 1 interlocuteur, 1 contrat — pour tout votre IT (poste, serveur, sécurité, télécom)</li>
+          <li>Forfait fixe mensuel, tout inclus. Vous budgétez à l'avance, sans surprise</li>
+          <li>Intervention sous 4 h garantie, technicien local. 80 % résolu en moins d'1 h, à distance</li>
+          <li>Supervision 24/7 : on détecte la sauvegarde en échec avant vous, et on la corrige</li>
+          <li>Rapport mensuel, point trimestriel : vous pilotez votre IT comme un budget</li>
+          <li>Astreinte cybersécurité incluse : on prend la main même hors heures ouvrées</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="commitments">
+  <div class="container">
+    <div class="compare-head" style="margin-bottom:8px;">
+      <span class="sales-bench-eyebrow" style="background:rgba(13,32,72,0.08);color:var(--navy);">Nos engagements écrits</span>
+      <h2 style="font-family:'Bricolage Grotesque',serif;font-size:clamp(1.4rem,2.6vw,2rem);color:var(--navy);margin:14px 0 10px;">6 garanties contractuelles. Pas du blabla.</h2>
+      <p style="color:var(--muted);margin:0;">Chacune de ces promesses figure dans le contrat. Si on ne tient pas, vous êtes remboursé.</p>
+    </div>
+    <div class="commit-grid">
+      <div class="commit">
+        <div class="commit-num">1</div>
+        <div><h4>Intervention sous 4 h</h4><p>Sur tout incident critique, sur tout le Pays d'Ancenis. Pénalités contractuelles si dépassement.</p></div>
+      </div>
+      <div class="commit">
+        <div class="commit-num">2</div>
+        <div><h4>Tarif transparent</h4><p>Forfait mensuel tout inclus. Pas de ticket facturé, pas de surcoût "hors contrat" sans devis préalable.</p></div>
+      </div>
+      <div class="commit">
+        <div class="commit-num">3</div>
+        <div><h4>Sortie sans pénalité</h4><p>Pas d'engagement annuel. 30 jours de préavis et on transmet tout à votre nouveau prestataire.</p></div>
+      </div>
+      <div class="commit">
+        <div class="commit-num">4</div>
+        <div><h4>Sauvegardes testées</h4><p>Vérification automatique quotidienne + test de restauration trimestriel. Documenté.</p></div>
+      </div>
+      <div class="commit">
+        <div class="commit-num">5</div>
+        <div><h4>Référent attitré</h4><p>Un consultant senior dédié qui connaît votre infrastructure. Pas de roulement, pas de réexplication.</p></div>
+      </div>
+      <div class="commit">
+        <div class="commit-num">6</div>
+        <div><h4>Confidentialité &amp; RGPD</h4><p>Accord de confidentialité signé. Conformité RGPD, sous-traitance déclarée, hébergement français.</p></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;padding:28px;background:#F8FAFC;border-radius:14px;">
+      <p style="font-family:'Bricolage Grotesque',serif;font-size:1.15rem;color:var(--navy);font-weight:600;margin:0 0 18px;">Découvrons ensemble combien votre PME peut économiser sur son IT.</p>
+      <a href="../contact.html" class="btn btn-primary">Audit gratuit dans vos locaux</a>
+      <a href="tel:+33285521395" class="btn btn-ghost" style="margin-left:8px;">02 85 52 13 95</a>
+      <p style="font-size:0.85rem;color:var(--muted);margin:14px 0 0;">1 h 30 sur site · sans engagement · rapport sous 5 jours</p>
+    </div>
+  </div>
+</section>
+
 <section class="section section--paper">
   <div class="container">
     <div class="layout-2col">
