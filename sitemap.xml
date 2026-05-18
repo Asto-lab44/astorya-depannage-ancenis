@@ -2,56 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ancenis.astorya.fr/</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/services/infogerance-maintenance-informatique-ancenis.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/services/cybersecurite-ancenis.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/services/cloud-sauvegarde-ancenis.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/services/telephonie-fibre-ancenis.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/services/audit-conseil-informatique-ancenis.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/zones-intervention.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/a-propos.html</loc>
-    <priority>0.6</priority>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-05-18</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/contact.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/blog/index.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://ancenis.astorya.fr/mentions-legales.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
