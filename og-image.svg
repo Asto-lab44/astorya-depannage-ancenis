@@ -10,16 +10,13 @@
     </linearGradient>
   </defs>
 
-  <!-- Background -->
   <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <!-- Decorative grid pattern (subtle) -->
   <g opacity="0.06" stroke="#FFFFFF" stroke-width="1">
     <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
     <path d="M100 0 V630 M200 0 V630 M300 0 V630 M400 0 V630 M500 0 V630 M600 0 V630 M700 0 V630 M800 0 V630 M900 0 V630 M1000 0 V630 M1100 0 V630"/>
   </g>
 
-  <!-- Decorative blob -->
   <circle cx="1080" cy="540" r="280" fill="#FFFFFF" opacity="0.04"/>
   <circle cx="950" cy="120" r="180" fill="url(#accent)" opacity="0.10"/>
 
@@ -29,16 +26,13 @@
     <text x="46" y="68" font-family="Georgia, serif" font-size="60" font-weight="700" fill="#0D2048" text-anchor="middle">A</text>
   </g>
 
-  <!-- Brand name -->
   <text x="200" y="138" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#FFFFFF">Astorya</text>
   <text x="200" y="170" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#9BB0D4" letter-spacing="1">SOCIÉTÉ INFORMATIQUE — ANCENIS</text>
 
   <!-- Tagline -->
-  <text x="80" y="330" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#FFFFFF">Votre informatique,</text>
-  <text x="80" y="410" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#FFFFFF">pilotée à <tspan fill="#FF8B5C">Ancenis</tspan>.</text>
-
-  <!-- Subtitle -->
-  <text x="80" y="465" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#C7D2E8">Infogérance · Cybersécurité · Cloud · Téléphonie</text>
+  <text x="80" y="320" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#FFFFFF">Votre informatique mérite</text>
+  <text x="80" y="380" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#FFFFFF">plus qu'un prestataire.</text>
+  <text x="80" y="450" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#FF8B5C">Elle mérite un partenaire.</text>
 
   <!-- Bottom bar -->
   <rect x="80" y="540" width="1040" height="2" fill="#FF6B35" opacity="0.6"/>
